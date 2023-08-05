@@ -11,7 +11,6 @@
 		$num_rows=mysqli_num_rows($result);
 		if($result){
 			if($num_rows>0){
-				echo $num_rows;
 				echo '<div class="alert alert-danger d-flex align-items-center" role="alert">
 						  <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
 						  <div>
@@ -60,9 +59,9 @@
 </head>
 <body>
 
-
+	
 	<?php include "navbar.php" ?>
-
+	<!-- Book Regiser form -->
 	<div class="container my-5 p-5" style="border:1px solid black;">
 		<h4 class="text-center">New Book Register</h4>
 		<form class="col-md-4 offset-md-4" method="post">

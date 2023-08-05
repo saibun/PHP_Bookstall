@@ -2,13 +2,9 @@
   include"conncet.php";
   $query = "SELECT * FROM book";
   $result = mysqli_query($conn,$query);
-
-  
-  
-
 ?>
 <!doctype html>
-<html lang="en" xmlns:th="https://www.thymeleaf.com">
+<html>
   <head>
     
     <meta charset="utf-8">
@@ -46,7 +42,11 @@
                                     <td>'.$id.'</td>
                                     <td>'.$book_name.'</td>
                                     <td>'.$author.'</td>
-                                    <td>'.$price.'</td>                    
+                                    <td>'.$price.'</td> 
+                                    <td>
+                                      <a class="mx-3 btn btn-sm btn-warning" role="button" href="update.php?updateId='.$id.'">Update</a>
+                                      <a class="btn btn-sm btn-danger" role="button" href="delete.php?deleteId='.$id.'">Delete</a>
+                                    </td>                   
                             </tr>';
 
                             
